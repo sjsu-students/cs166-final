@@ -17,6 +17,16 @@ In the modern era however, we have learned a bit about how to stay safe when wri
 
 # Objectives
 
-We will deep dive into the `rust` programming language to explore the true depth of the safety that it provides.
+We will deep dive into the `rust` programming language to explore the true depth of the safety that it provides. We will also assess a buffer overflow attack and how it can occur in `C`, and how it may be achieved/prevented in `rust`.
 
 # Architecture
+
+We will use `TCC` for compiling our `C` code, and `cargo` (`rust`'s package manager) to build and manage our rust code.
+
+# Results and Analysis
+
+As it turns out, I was not prepared for the depth of the memory safety that `rust` provides. Keep in mind, this is also happening while rust is equaling `C` even in its ability to execute things quickly. In fact, for simple programs (thus easy to compare the assembly), `rust` compiled to almost identical assembly that the `C` code compiled to.
+
+`rust` uses a data ownership model. So what does that mean. 
+
+Github Link: [https://github.com/sjsu-students/cs166-final](https://github.com/sjsu-students/cs166-final)
