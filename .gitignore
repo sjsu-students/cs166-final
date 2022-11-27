@@ -1,1 +1,2 @@
+# ignore pandoc generated pdf files from markdown paper
 *.pdf
